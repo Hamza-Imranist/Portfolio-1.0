@@ -1,0 +1,627 @@
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+.wrapper {
+    display: none;
+    font-family: 'Roboto Condensed';
+}
+a {
+    text-decoration: none;
+}
+.nav a {
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+.nav a:hover {
+    color: #19f6e8;
+}
+.social-icons-div {
+    height: 60vh;
+    width: 5vw;
+    position: fixed;
+    left: 2vw;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 1.4vw;
+}
+.social-icon {
+    transition: all 0.2s ease-in-out;
+}
+.social-icon:hover {
+    color: #19f6e8;
+    cursor: pointer;
+}
+.email-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 2vw;
+    height: 50vh;
+}
+.email-text {
+    writing-mode: vertical-rl;
+    color: white;
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+    font-family: 'Fira Code', monospace;
+    transition: all 0.5s ease-in-out;
+}
+.email-text:hover {
+    cursor: pointer;
+    color: #19f6e8;
+}
+.line-div {
+    width: 3vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line {
+    width: 0.1vw;
+    height: 15vh;
+    background-color: white;
+}
+.intro-page {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 10vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-div {
+    font-family: 'Fira Code', monospace;
+    width: 3vw;
+    height: 6vh;
+    border: 0.1vw solid #19f6e8;
+    font-size: 1.4vw;
+    color: #0dcfc2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+.logo-div:hover {
+    background-color: #242424;
+    border: 0.1vw solid white;
+    color: white;
+}
+.nav {
+    margin-right: 10vw;
+    width: 35vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1vw;
+    font-family: 'Fira Code', monospace;
+}
+.navcon {
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.nav-number {
+    color: #19f6e8;
+}
+.navcon:hover {
+    cursor: pointer;
+    color: #19f6e8;
+}
+.intro-content {
+    height: 85vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20vw;
+}
+.name-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 58vw;
+    height: 50vh;
+}
+.hi-text , .intro-para {
+    color: white;
+    font-size: 1.2vw;
+    align-self: flex-start;
+    font-family: 'Fira Code', monospace;
+}
+.intro-para {
+    width: 36vw;
+    text-align: justify;
+}
+.name {
+    color: #19f6e8;
+    font-size: 8vw;
+    font-weight: bolder;
+}
+.button-div {
+    width: 36vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: 7vh;
+}
+.hire-button {
+    width: 14vw;
+    height: 8vh;
+    font-size: 1vw;
+    color: #19f6e8;
+    font-family: 'Fira Code', monospace;
+    letter-spacing: 0.1vw;
+    border: 0.1vw solid #19f6e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3vw;
+    background-color: #19f6e703;
+    transition: all 0.5s ease-in-out;
+}
+.hire-button:hover {
+    cursor: pointer;
+    background-color: #19f6e721;
+    color: #2afff1;
+}
+.second-page {
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-div {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+}
+.about-heading-div {
+    font-family: 'Fira Code', monospace;
+    color: white;
+    font-size: 1.5vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.about-number {
+    color: #19f6e8;
+    font-size: 1vw;
+}
+.about-heading-line {
+    display: inline-block;
+    width: 12vw;
+    height: 0.15vh;
+    background-color: rgba(226, 226, 226, 0.644);
+}
+.about-para-div {
+    font-size: 1vw;
+    width: 30vw;
+    color: rgba(226, 226, 226, 0.644);
+    text-align: justify;
+    letter-spacing: 0.05vw;
+}
+.skills-line {
+    font-size: 1vw;
+    width: 30vw;
+    color: rgba(226, 226, 226, 0.644);
+    text-align: justify;
+    letter-spacing: 0.05vw;
+}
+.skills-table {
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.skills-table-row-1 , .skills-table-row-2 {
+    width: 12vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.skill-div {
+    width: 15vw;
+    height: 4vh;
+    font-size: 1vw;
+    font-family: 'Fira Code', monospace;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.skill-arrow {
+    color: #19f6e8;
+}
+.whatido-div {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.webdevelopment-div , .uidesign-div , .experiencedesign-div {
+    width: 30vw;
+    height: 25vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.heading-icon {
+    width: 4rem;
+    height: 4rem;
+    border: 0.1vw solid #19f6e8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0dcfc2;
+    font-size: 1.5vw;
+    transition: all 0.5s ease-in-out;
+}
+.heading-icon:hover {
+    cursor: pointer;
+    background-color: #242424;
+    color: white;
+    border: 0.1vw solid white;
+}
+.fas , .fab{
+    transition: all 0.8s ease-in-out;
+}
+.heading-icon:hover .fas , .heading-icon:hover .fab {
+    transform: rotate(360deg);
+}
+.skill-text {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.skill-text-heading {
+    width: 15vw;
+    height: 3vh;
+    color: #19f6e8;
+    font-size: 1.2vw;
+    font-family: 'Fira Code', monospace;
+}
+.skill-text-details {
+    width: 25vw;
+    height: 15vh;
+    font-size: 1vw;
+    color: rgba(226, 226, 226, 0.644);
+    text-align: justify;
+}
+.third-page {
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column-1 {
+    width: 35vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.experience-div {
+    width: 35vw;
+    height: 30vh;
+}
+.experience-heading {
+    font-family: 'Fira Code', monospace;
+    color: white;
+    font-size: 1.5vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.experience-text {
+    font-size: 1vw;
+    width: 30vw;
+    color: rgba(226, 226, 226, 0.644);
+    text-align: justify;
+    letter-spacing: 0.05vw;
+}
+.development-div {
+    width: 35vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.development-heading {
+    color: #19f6e8;
+    font-family: 'Fira Code', monospace;
+    font-size: 1.2vw;
+}
+.development-circles-div {
+    width: 35vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.development-circles-row {
+    width: 30vw;
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.development-circle {
+    width: 5rem;
+    height: 5rem;
+    border: 0.1vw solid rgba(226, 226, 226, 0.644);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8vw;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+.development-circle:hover {
+    color: #19f6e8;
+    border: 0.1vw solid #19f6e8;
+    background-color: #242424;
+    cursor: pointer;
+}
+.column-2 {
+    width: 35vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.skills-list-div {
+    width: 35vw;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.skill-list {
+    width: 8vw;
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.skill-list-heading {
+    font-size: 1.2vw;
+    font-family: 'Fira Code', monospace;
+    color: #19f6e8;
+
+}
+.skill-list-text {
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: rgba(226, 226, 226, 0.644);
+    font-size: 1vw;
+}
+.skills-logos-div {
+    width: 35vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.skills-logo-row {
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+}
+.skill-logo {
+    width: 4rem;
+    height: 4rem;
+    filter: grayscale(100%);
+    /* transition: all 0.4s ease-in-out; */
+    animation: lightonoff 2s ease-in-out infinite;
+}
+/* .skill-logo:hover {
+    cursor: pointer;
+    filter: none;
+} */
+.uconnect-page {
+    height: 110vh;
+}
+.uconnect-image {
+    width: 50vw;
+}
+.contact-page {
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.contact-form-div {
+    width: 35vw;
+    height: 75vh;
+}
+.contact-pic {
+    width: 30vw;
+    height: 60vh;
+}
+.image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21vw;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.198);
+    -webkit-box-shadow: 0px 20px 22px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 20px 22px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 20px 22px -1px rgba(0,0,0,0.75);
+    z-index: 100;
+    cursor: pointer;
+}
+.black-image {
+    width: 20vw;
+    z-index: -1;
+}
+.image-div:hover .black-image {
+    z-index: 1000;
+}
+.blue-borders {
+    width: 20vw;
+    height: 60vh;
+    position: absolute;
+    border: 0.1vw solid #19f6e8;
+    top: 24vh;
+    right: 12vw;
+    transition: all 0.5s ease-in-out;
+    z-index: 10;
+}
+.blue-borders:hover {
+    top: 20vh;
+    right: 14vw;
+}
+@keyframes lightonoff {
+    100% {
+        filter: none;
+    }
+}
+.contact-me-page {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-me-heading-div {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bolder;
+    letter-spacing: 0.2vw;
+}
+.contact-me-form-div {
+    height: 90vh;
+    width: 100vw;
+    background-color: yellow;
+    background-image: url(../background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+}
+.contact-form {
+    margin-left: 10vw;
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contact-line {
+    font-size: 1vw;
+    font-weight: normal;
+    font-family: 'Fira Code', monospace;
+    letter-spacing: 0;
+}
+#name , #email , #textarea {
+    border: none;
+    border-bottom: 0.1vw solid white;
+    background-color: rgba(0, 0, 0, 0.37);
+    padding: 1vw;
+    color: white;
+    font-size: 1.2vw;
+}
+#name {
+    font-weight: bolder;
+    letter-spacing: 0.1vw;
+}
+#name:focus , #email:focus , #textarea:focus {
+    outline: 0.1vw solid white;
+}
+#name::placeholder , #email::placeholder , #textarea::placeholder {
+    color: rgba(226, 226, 226, 0.644);
+    font-family: 'Fira Code', monospace;
+    font-weight: normal;
+}
+#textarea {
+    resize: none;
+    font-family: 'Roboto Condensed';
+}
+#submitbutton {
+    width: 10vw;
+    height: 6vh;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.37);
+    color: white;
+    border: 0.1vw solid white;
+    border-radius: 0.1vw;
+    align-self: flex-end;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Roboto Condensed';
+    font-weight: bolder;
+    letter-spacing: 0.1vw;
+}
+#submitbutton:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.footer-div {
+    height: 25vh;
+    background-color: rgba(226, 226, 226, 0.644);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icons-div {
+    width: 29vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footercon {
+    background-color: #141414;
+    height: 8vh;
+    width: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    color: white;
+}
+.footercon:hover {
+    background-color: #242424;
+    cursor: pointer;
+}

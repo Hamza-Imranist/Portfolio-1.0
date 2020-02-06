@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background: #141414;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+.svg-wrapper {
+    position: relative;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shape1 , .shape2 {
+    stroke-dasharray: 1120;
+    stroke-width: 3px;
+    fill: transparent;
+    stroke: #4ffbf0;
+    animation: svgAnim 4s linear 1s forwards;
+}
+.shape1 {
+    stroke-dashoffset: 1120;
+}
+.shape2 {
+    stroke-dashoffset: -1120;
+}
+.text {
+    font-family: 'Fira Code', monospace;
+    color: #0dcfc2;
+    font-weight: bolder;
+    font-size: 1.75rem;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    animation: textAnim 2s linear 2s forwards;
+}
+@keyframes svgAnim {
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1120;
+    }
+}
+@keyframes textAnim {
+    100% {
+        opacity: 1.0;
+    }
+}
+.preloader {
+    animation: preloaderAnim 2s ease-in-out 5s forwards;
+}
+@keyframes preloaderAnim {
+    100% {
+        display: none;
+    }
+}
