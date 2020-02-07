@@ -7,6 +7,8 @@ html {
     background: #141414;
     text-align: center;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
 }
 .svg-wrapper {
     position: relative;
