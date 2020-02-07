@@ -4,7 +4,9 @@
 }
 .wrapper {
     display: none;
-    font-family: 'Roboto Condensed';
+    /* font-family: 'Roboto Condensed'; */
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow: hidden;
 }
 a {
     text-decoration: none;
@@ -29,10 +31,11 @@ a {
     color: white;
     font-size: 1.4vw;
 }
-.social-icon {
+.social-icon a {
+    color: white;
     transition: all 0.2s ease-in-out;
 }
-.social-icon:hover {
+.social-icon a:hover {
     color: #19f6e8;
     cursor: pointer;
 }
@@ -40,13 +43,13 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     position: fixed;
     bottom: 0;
     right: 2vw;
     height: 50vh;
 }
-.email-text {
+.email-text a {
     writing-mode: vertical-rl;
     color: white;
     font-size: 1vw;
@@ -54,7 +57,7 @@ a {
     font-family: 'Fira Code', monospace;
     transition: all 0.5s ease-in-out;
 }
-.email-text:hover {
+.email-text a:hover {
     cursor: pointer;
     color: #19f6e8;
 }
@@ -126,6 +129,7 @@ a {
 }
 .intro-content {
     height: 85vh;
+    width: 100vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -136,7 +140,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 58vw;
     height: 50vh;
 }
 .hi-text , .intro-para {
@@ -151,8 +154,9 @@ a {
 }
 .name {
     color: #19f6e8;
-    font-size: 8vw;
+    font-size: 7.674vw;
     font-weight: bolder;
+    letter-spacing: 0.1vw;
 }
 .button-div {
     width: 36vw;
@@ -208,7 +212,7 @@ a {
 .about-heading-line {
     display: inline-block;
     width: 12vw;
-    height: 0.15vh;
+    height: 0.16vh;
     background-color: rgba(226, 226, 226, 0.644);
 }
 .about-para-div {
@@ -253,7 +257,7 @@ a {
     color: #19f6e8;
 }
 .whatido-div {
-    width: 40vw;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -316,6 +320,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* padding-top: 15vh; */
 }
 .column-1 {
     width: 35vw;
@@ -404,7 +409,7 @@ a {
     align-items: center;
 }
 .skill-list {
-    width: 8vw;
+    /* width: 8vw; */
     height: 28vh;
     display: flex;
     flex-direction: column;
@@ -531,7 +536,7 @@ a {
     height: 90vh;
     width: 100vw;
     background-color: yellow;
-    background-image: url(../background.jpg);
+    background-image: url(../images/background.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -576,7 +581,7 @@ a {
 }
 #textarea {
     resize: none;
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed', sans-serif;
 }
 #submitbutton {
     width: 10vw;
@@ -588,7 +593,7 @@ a {
     border-radius: 0.1vw;
     align-self: flex-end;
     transition: all 0.5s ease-in-out;
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: bolder;
     letter-spacing: 0.1vw;
 }
@@ -598,10 +603,11 @@ a {
     color: black;
 }
 .footer-div {
-    height: 25vh;
+    height: 35vh;
     background-color: rgba(226, 226, 226, 0.644);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
 }
 .footer-icons-div {
@@ -610,6 +616,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 10vh;
 }
 .footercon {
     background-color: #141414;
@@ -618,10 +625,196 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     color: white;
+    font-size: 1.5vw;
 }
-.footercon:hover {
-    background-color: #242424;
+.f-git:hover {
+    background-color: rgb(32, 182, 67);
+    color: white;
+    transform: scale(1.05,1.05);
     cursor: pointer;
+}
+.f-linkedin:hover {
+    background-color: #0077B5;
+    color: white;
+    transform: scale(1.05,1.05);
+    cursor: pointer;
+}
+.f-codepen:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05,1.05);
+    cursor: pointer;
+}
+.f-twitter:hover {
+    background-color: #15202B;
+    color: #1A91DA;
+    transform: scale(1.05,1.05);
+    cursor: pointer;
+}
+.f-instagram:hover {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: white;
+    transform: scale(1.05,1.05);
+    cursor: pointer;
+}
+.f-facebook:hover {
+    background-color: #4267B2;
+    color: white;
+    transform: scale(1.05,1.05);
+    cursor: pointer;
+}
+.f-mail:hover {
+    background-color: #DB4437;
+    color: #E6E6E6;
+    transform: scale(1.05,1.05);
+    cursor: pointer;
+}
+.copyrights {
+    font-style: italic;
+    font-style: 1vw;
+    font-family: 'Fira Code', monospace;
+    font-weight: bolder;
+}
+.work-page {
+    height: 520vh;
+}
+.work-page-header-div {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work-heading-div {
+    width: 35vw;
+    height: 10vh;
+    color: white;
+    font-family: 'Fira Code', monospace;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+}
+.working-platforms-div {
+    width: 35vw;
+    height: 10vh;
+}
+.work-showcase-div {
+    margin-top: 15vh;
+}
+.work-showcase-image-div {
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work-showcase-image {
+    width: 50vw;
+    height: 60vh;
+}
+.work-showcase-image-booking {
+    width: 35vw;
+    height: 60vh;
+}
+.work-showcase-details {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.work-showcase-details-header {
+    height: 10vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.work-showcase-name {
+    width: 14vw;
+    height: 8vh;
+    color: #19f6e8;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    letter-spacing: 0.1vw;
+    border-bottom: 0.1vw solid #19f6e8;
+    background-color: #19f6e703;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work-showcase-buttons {
+    width: 24vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.work-showcase-button {
+    width: 10vw;
+    height: 6vh;
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1vw solid rgba(226, 226, 226, 0.644);
+    color: rgba(226, 226, 226, 0.644);
+    transition: all 0.5s ease-in-out;
+}
+.work-showcase-button:hover {
+    background-color: rgba(226, 226, 226, 0.644);
+    color: #141414;
+    cursor: pointer;
+}
+.work-showcase-details-para {
+    width: 80vw;
+    height: 15vh;
+    color: rgba(226, 226, 226, 0.644);
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+.work-showcase-details-para-alifinance {
+    width: 80vw;
+    height: 15vh;
+    color: rgba(226, 226, 226, 0.644);
+    text-align: justify;
+    padding-top: 5vh;
+}
+#teamaliflink {
+    color: #19f6e8;
+}
+.work-showcase-details-techs {
+    width: 80vw;
+    height: 5vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.work-showcase-tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+    margin-left: 2vw;
+    font-size: 0.8vw;
+    color: rgba(226, 226, 226, 0.644);
+    background-color: #333333;
+    border-radius: 0.2vw;
+    padding: 0.8vw;
+}
+.morework-div {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: rgba(226, 226, 226, 0.644);
+    font-size: 1vw;
+}
+.morework-github {
+    color: rgba(226, 226, 226, 0.644);
+    font-size: 5vw;
 }
