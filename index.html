@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/mainpageStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5a01f232c4.js" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.js" defer></script>
 </head>
 <body>
     <!-- PRELOADER STARTS HERE -->
@@ -30,7 +30,36 @@
     <!-- MAIN PAGE DIV STARTS HERE -->
 
     <div class="wrapper">
-        
+
+        <div class="hamburger">
+
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+
+        </div>
+
+
+
+        <div class="mobile-navbar-div">
+            <div class="hamburger-close">
+
+                <div class="hamburger-line hml1"></div>
+                <div class="hamburger-line hml2"></div>
+                <div class="hamburger-line hml3"></div>
+    
+            </div>
+            <div class="mobile-nav">
+                <div class="mob-navcon"><a href="#about-me"><span class="mob-nav-number">01.</span> About</a></div>
+                <div class="mob-navcon"><a href="#my-experience"><span class="mob-nav-number">02.</span> Experience</a></div>
+                <div class="mob-navcon"><a href="#my-work"><span class="mob-nav-number">03.</span> Work</a></div>
+                <div class="mob-navcon"><a href="#contact-me"><span class="mob-nav-number">04.</span> Contact</a></div>
+            </div>
+
+        </div>
+
+
+
         <!-- Fixed Social Icons -->
         <div class="social-icons-div">
             <div class="social-icon"><a href="https://github.com/Hamza-Imranist" target="_blank"><i class="fab fa-github"></i></a></div>
@@ -91,7 +120,7 @@
 
                 </div>
                 <div class="button-div">
-                    <a href="mailto:imranist@teamalif.com" target="_blank"><div class="hire-button">
+                    <a href="mailto:imranist@teamalif.com"><div class="hire-button">
                         Get In Touch
                     </div></a>
                 </div>
@@ -311,12 +340,16 @@
                             U-CONNECT
                         </div>
                         <div class="work-showcase-buttons">
-                            <div class="work-showcase-button">
-                                Demo
-                            </div>
-                            <div class="work-showcase-button">
-                                Code
-                            </div>
+                            <a href="https://github.com/Hamza-Imranist/uconnect" target="_blank">
+                                <div class="work-showcase-button">
+                                    Demo
+                                </div>
+                            </a>
+                            <a href="https://github.com/Hamza-Imranist/uconnect" target="_blank">
+                                <div class="work-showcase-button">
+                                    Code
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="work-showcase-details-para">
@@ -355,12 +388,16 @@
                             ALIFINANCE
                         </div>
                         <div class="work-showcase-buttons">
-                            <div class="work-showcase-button">
-                                Demo
-                            </div>
-                            <div class="work-showcase-button">
-                                Code
-                            </div>
+                            <a href="https://github.com/Hamza-Imranist/CFO-UI" target="_blank">
+                                <div class="work-showcase-button">
+                                    Demo
+                                </div>
+                            </a>
+                            <a href="https://github.com/Hamza-Imranist/CFO-UI" target="_blank">
+                                <div class="work-showcase-button">
+                                    Code
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="work-showcase-details-para-alifinance">
@@ -393,12 +430,16 @@
                             CINEBOOK
                         </div>
                         <div class="work-showcase-buttons">
-                            <div class="work-showcase-button">
-                                Demo
-                            </div>
-                            <div class="work-showcase-button">
-                                Code
-                            </div>
+                            <a href="https://github.com/Hamza-Imranist/seat-booking-demo-app" target="_blank">
+                                <div class="work-showcase-button">
+                                    Demo
+                                </div>
+                            </a>
+                            <a href="https://github.com/Hamza-Imranist/seat-booking-demo-app" target="_blank">
+                                <div class="work-showcase-button">
+                                    Code
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="work-showcase-details-para">
@@ -482,6 +523,19 @@
           },4200);
         }
         init();
+        let button = document.querySelector(".hamburger");
+        let nav = document.querySelector(".mobile-navbar-div");
+        button.addEventListener('click',()=>{
+        nav.style.transform = "none";
+        })
+        let buttonClose = document.querySelector(".hamburger-close");
+        buttonClose.addEventListener('click',()=>{
+        nav.style.transform = "translate(110%)";
+        })
+        let introPage = document.querySelector(".intro-page");
+        introPage.addEventListener("click",()=>{
+            nav.style.transform = "translate(110%)";
+        })
     </script>
 
 

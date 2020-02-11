@@ -2,6 +2,10 @@
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
+*::selection {
+    background-color: #242424;
+    color: rgba(226, 226, 226, 0.644);
+}
 .wrapper {
     display: none;
     /* font-family: 'Roboto Condensed'; */
@@ -9,6 +13,7 @@
     overflow: hidden;
     font-size: 1.2vw;
     -ms-overflow-style: none;
+    position: relative;
 }
 a {
     text-decoration: none;
@@ -133,9 +138,9 @@ a {
     height: 85vh;
     width: 100vw;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding: 20vw;
+    flex-direction: column;
 }
 .name-text {
     display: flex;
@@ -165,8 +170,6 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    position: absolute;
-    bottom: 7vh;
 }
 .hire-button {
     width: 14vw;
@@ -824,10 +827,14 @@ a {
         filter: none;
     }
 }
-
+.mobile-navbar-div {
+    display: none;
+}
 @media only screen and (max-width: 768px) {
 
-
+    .mobile-navbar-div {
+        display: none;
+    }
     .social-icons-div {
         font-size: 2.4vw;
     }
@@ -908,6 +915,85 @@ a {
 
 @media only screen and (max-width: 468px) {
 
+
+    .hamburger {
+        top: 6.5vh;
+        right: 5vw;
+        position: absolute;
+        width: 10vw;
+        height: 3.5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    .hamburger-line {
+        height: 0.3vh;
+        width: 8vw;
+        background-color: #19f6e8;
+    }
+
+    .hamburger-close {
+        top: 6.5vh;
+        right: 5vw;
+        position: absolute;
+        width: 10vw;
+        height: 3.5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    .hamburger-line {
+        height: 0.3vh;
+        width: 8vw;
+        background-color: #19f6e8;
+    }
+    .hml1 , .hml3 {
+        display: none;
+    }
+    .hml2 {
+        width: 5vw;
+    }
+
+
+
+    .mobile-navbar-div {
+        display: block;
+        background-color: #242424;
+        height: 100vh;
+        width: 70vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+        transform: translate(110%);
+        transition: transform 1s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    .mobile-nav {
+        height: 40vh;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .mob-navcon a {
+        color: rgba(226, 226, 226, 0.644);
+        font-size: 3.5vw;
+        font-family: 'Fira Code', monospace;
+    }
+    .mob-nav-number {
+        color: #19f6e8;
+        font-size: 2.8vw;
+    }
+
+
+
+
     .nav {
         display: none;
     }
@@ -920,15 +1006,18 @@ a {
 
 
     .logo-div {
-        width: 10vw;
+        width: 12vw;
         margin-left: 10vw;
-        font-size: 4vw;
+        font-size: 5vw;
         border: 0.3vw solid #19f6e8;
     }
 
     .intro-content {
         padding: 0;
         padding-left: 05vw;
+        align-items: flex-start;
+        padding-top: 15vh;
+        justify-content: center;
     }
 
     .hi-text , .intro-para {
@@ -941,15 +1030,18 @@ a {
         font-size: 12vw;
     }
     .name-text {
-        height: 22vh;
+        height: 35vh;
         justify-content: space-around;
     }
-
+    .intro-para {
+        margin-bottom: 10vh;
+    }
     .button-div {
         width: 80vw;
     }
     .hire-button {
-        width: 40vw;
+        width: 45vw;
+        height: 6vh;
         font-size: 4vw;
         border: 0.2vw solid #19f6e8;
         border-radius: 0.5vw;
@@ -1153,8 +1245,9 @@ a {
     }
     .contact-me-form-div {
         width: 100vw;
-        height: 35vh;
-        background-size: contain;
+        height: 40vh;
+        background-size: cover;
+        background-position: top right;
     }
     .contact-form {
         height: 35vh;
